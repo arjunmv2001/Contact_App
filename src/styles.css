@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya&family=Alegreya+Sans+SC:wght@100;400&family=Arsenal&family=Barlow:wght@100&family=Bebas+Neue&family=Black+Ops+One&family=Bruno+Ace&family=Bruno+Ace+SC&family=Caprasimo&family=Castoro+Titling&family=Concert+One&family=Dancing+Script&family=Fira+Sans:ital,wght@1,300&family=Geologica&family=Goldman&family=Great+Vibes&family=Gruppo&family=Kalam:wght@300&family=Kanit:wght@300&family=Kaushan+Script&family=Lobster&family=Martel:wght@200&family=Merienda&family=Montserrat+Alternates:wght@100&family=Montserrat:ital,wght@0,100;1,100&family=Mulish:wght@200&family=Noto+Sans:ital,wght@1,500&family=Noto+Serif&family=Nunito:wght@200&family=Open+Sans:wght@300;600&family=Orbitron&family=Oswald:wght@200&family=Pacifico&family=Pathway+Extreme:wght@100&family=Paytone+One&family=Poltawski+Nowy&family=Poppins:wght@300&family=Prompt&family=Quicksand:wght@300&family=Raleway:wght@100&family=Righteous&family=Roboto+Slab:wght@600&family=Roboto:ital,wght@0,100;1,300&family=Rubik+Pixels&family=Russo+One&family=Secular+One&family=Sigmar&family=Sofia+Sans&family=Titillium+Web:wght@200&family=Ubuntu:wght@300&family=Ultra&family=Wix+Madefor+Display&family=Ysabeau+Infant:wght@700&family=Ysabeau+SC&display=swap');
+
+h1{
+    font-family: 'Caprasimo', cursive;
+font-size: 60px;
+}
+h3{
+    font-family: 'Ysabeau SC', sans-serif;
+
+}
+

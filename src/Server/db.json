@@ -1,0 +1,48 @@
+{
+  "contacts": [
+    {
+      "id": 2,
+      "name": "Arun bb",
+      "email": "arun@gmail.com",
+      "phone": "9876543211",
+      "photourl": "https://i.pinimg.com/736x/5f/40/6a/5f406ab25e8942cbe0da6485afd26b71.jpg",
+      "company": "ABC company",
+      "title": "Junior Developer",
+      "GroupId": "2"
+    },
+    {
+      "id": 3,
+      "name": "Amal krishna",
+      "email": "amal@gmail.com",
+      "phone": "9876543212",
+      "photourl": "https://th.bing.com/th/id/R.2a42d7b274bb96d8cc0976555277bea8?rik=78P3LjqrXSkA5Q&riu=http%3a%2f%2fgetdrawings.com%2ffree-icon%2fcool-profile-icons-69.png&ehk=wSrAuMrucfij0k%2bWLPOJBjzoYz1%2bz4pIUyFZ44rWOzg%3d&risl=&pid=ImgRaw&r=0",
+      "company": "ABC company",
+      "title": "HR Manager",
+      "GroupId": "3"
+    },
+    {
+      "id": 4,
+      "name": "Alin ",
+      "email": "alin@gmail.com",
+      "phone": "9876543215",
+      "photourl": "https://cdn3.iconfinder.com/data/icons/business-and-management-without-backround-set-2/145/65-512.png",
+      "company": "ABC company",
+      "title": "Senior Developer",
+      "GroupId": "2"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "Company"
+    },
+    {
+      "id": "2",
+      "name": "family"
+    },
+    {
+      "id": "3",
+      "name": "friends"
+    }
+  ]
+}

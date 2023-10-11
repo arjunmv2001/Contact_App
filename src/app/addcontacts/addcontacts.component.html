@@ -1,0 +1,85 @@
+<!-- {{contact | json}} -->
+<div class="container">
+  <div class="row">
+    <h1 class="text-center my-3">Add Contact Details</h1>
+    <div class="col-6">
+      <img src="https://cdn-icons-png.flaticon.com/512/81/81544.png" alt="">
+    </div>
+
+    <div class="col-6">
+      <!-- form -->
+      <form>
+        <div class="form-floating mb-3">
+          <input [(ngModel)]="contact.id" name="id" type="text" class="form-control" id="floatingfullname"
+            placeholder="Full Name">
+          <label for="floatingInput">ID</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input [(ngModel)]="contact.name" name="name" type="text" class="form-control" id="floatingfullname"
+            placeholder="Full Name">
+          <label for="floatingInput">Full Name</label>
+        </div>
+
+        <!-- Photo Url -->
+
+        <div class="form-floating mb-3">
+          <input [(ngModel)]="contact.photourl" name="photourl" type="text" class="form-control" id="floatingphotourl"
+            placeholder="Photo url">
+          <label for="floatingphoto">Photo Url</label>
+        </div>
+
+        <!-- email -->
+
+        <div class="form-floating mb-3">
+          <input [(ngModel)]="contact.email" name="email" type="email" class="form-control" id="floatingemail"
+            placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+
+
+        <!-- Mobile -->
+
+        <div class="form-floating mb-3">
+          <input [(ngModel)]="contact.phone" name="Mobile" type="text" class="form-control" id="floatingmobile"
+            placeholder="Mobile">
+          <label for="floatingphoto">Mobile</label>
+        </div>
+
+        <!-- Company Name -->
+        <div class="form-floating mb-3">
+          <input [(ngModel)]="contact.company" name="Company" type="text" class="form-control" id="floatingcompany"
+            placeholder="Company Name">
+          <label for="floatingphoto">Company Name</label>
+        </div>
+
+        <!-- Title -->
+
+        <div class="form-floating mb-3">
+          <input [(ngModel)]="contact.title" name="title" type="email" class="form-control" id="floatingtitle"
+            placeholder="Title">
+          <label for="floatingInput">Title</label>
+        </div>
+
+        <!-- group -->
+        <div class="mb-3 form-floating">
+          <select [(ngModel)]="contact.GroupId" name="GroupId" class="form-control">
+            <option selected hidden disabled>{{contact.GroupId}}</option>
+            <option [value]="group.id" *ngFor="let group of allGroups">{{group.name}}</option>
+
+          </select>
+        </div>
+
+
+        <!-- button -->
+        <div class="text-center">
+          <input (click)="addContact()" routerLink="/" type="button" value="Submit" class="btn btn-outline-dark my-3">
+        </div>
+
+        <!-- </div>
+         -->
+        <!-- </div> -->
+      </form>
+    </div>
+  </div>
+</div>

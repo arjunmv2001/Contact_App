@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <ul class="list-group list-group-flush mt-5">
+                <li class="list-group-item">Full Name : {{contact.name}}</li>
+                <li class="list-group-item">Email : {{contact.email}}</li>
+                <li class="list-group-item">Mobile : {{contact.phone}}</li>
+                <li class="list-group-item">Title : {{contact.title}}</li>
+                <li class="list-group-item">Group : {{groupName}}</li>
+              </ul>
+              <!-- Redirect to mainpage -->
+              <button routerLink="/" class="btn btn-outline-dark my-5">Back to home</button>
+        </div>
+
+        <div class="col-6">
+            <img width="75%" height="350px" [src]="contact.photourl" alt="" >
+        </div>
+    </div>
+</div>

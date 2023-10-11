@@ -1,0 +1,62 @@
+Login Details : {{loginDate|date:'short'}}
+<div>
+    <h1 style="text-align: center;">CONTACT MANAGEMENT APPLICATION</h1>
+    <P style="text-align: justify; width: 40%; margin-left: 450px;">Customers are the lifeblood of any business, so it’s important to keep their information organized and easily accessible. Modern contact management software decreases input errors, saves time, and helps your team procure and organize up-to-date customer information.</P>
+
+</div>
+<div class="row">
+    <div class="col">
+        <input (keyup)="search($event)"  style="width:600px; margin-left: 300px; border: 2px solid black;" type="text" placeholder="search contact">
+        <button class="btn btn-outline-dark m-3" style="border: 2px solid black;" routerLink="/contactmanager/addcontact">Add Contact</button>
+    </div>
+</div>
+
+{{heading}}
+<!-- {{allContacts|json}} -->
+<div class="row">
+    <div class="col-6" *ngFor="let contact of allContacts |filter:searchKey:'name'">
+        <div class="card ms-5" style="width: 500px;">
+            <div class="row">
+                <div class="col-6">
+                    <img style="height: 200px;" [src]="contact.photourl" alt="">
+                    
+                </div>
+                <div class="col-6">
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Full Name</div>
+                               {{contact.name}}
+                            </div>
+                            <!-- view -->
+                            <span class="badge bg-dark rounded-pill p-2">
+                                <a routerLink="/contactmanager/view/{{contact.id}}"><i class="fa-solid fa-eye" style="color: #ffffff;"></i></a></span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Contact</div>
+                                {{contact.phone}}
+                            </div>
+                            <!-- edit -->
+                            <span class="badge bg-dark rounded-pill p-2">
+                                <a routerLink="/contactmanager/edit/{{contact.id}}"><i class="fa-solid fa-pen" style="color: #ffffff;"></i></a></span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">E-mail</div>
+                                {{contact.email}}
+                            </div>
+                            <!-- delete -->
+                            <button (click)="deleteContact(contact.id)" class="badge bg-dark rounded-pill p-2">
+                                <a routerLink=""><i class="fa-solid fa-trash" style="color: #ffffff;"></i></a></button>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+           
+        </div>
+
+
+
